@@ -1,2 +1,3 @@
-#!/bin/bash
-python3 -m compileall -b "$PYFILE"
+import sys
+sys.stderr.write('and that piece of art is useful - Dora Korpar, 2015-10-19\n')
+sys.exit(1)
