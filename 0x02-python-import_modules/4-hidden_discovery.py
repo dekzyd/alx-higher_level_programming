@@ -4,4 +4,4 @@ if __name__ == "__main__":
     list = dir(hidden_4)
     for item in list:
         if item[0] != '_':
-             print(item)
+            print(item)
