@@ -11,10 +11,11 @@ def roman_to_int(roman_string):
             }
     total = 0
     if roman_string.isalpha():
-        for char in roman_string:
-            if char in r_num:
-                total += r_num[char]
+        for i in range(len(roman_string - 1)):
+            if r_num[roman_string[i]] >= r_num[roman_string[i + 1]]:
+                total += r_num[roman_string[i]]
+            else:
+                total -= r_num[roman_string[i]]
+        return total
     else:
         return 0
-
-    return total
