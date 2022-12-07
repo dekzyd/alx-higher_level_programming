@@ -9,6 +9,7 @@ def roman_to_int(roman_string):
             'D': 500,
             'M': 1000
             }
+    i = 0
     total = 0
     if roman_string.isalpha():
         for i in range(len(roman_string - 1)):
@@ -16,6 +17,7 @@ def roman_to_int(roman_string):
                 total += r_num[roman_string[i]]
             else:
                 total -= r_num[roman_string[i]]
+            i += 1
         return total
     else:
         return 0
