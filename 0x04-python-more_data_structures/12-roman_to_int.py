@@ -18,6 +18,7 @@ def roman_to_int(roman_string):
             else:
                 total -= r_num[roman_string[i]]
             i += 1
+        total += r_num[roman_string[i]]
         return total
     else:
         return 0
