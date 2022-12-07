@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
             'M': 1000
             }
     total = 0
-    if roman_string:
+    if roman_string.isalpha():
         for char in roman_string:
             if char in r_num:
                 total += r_num[char]
