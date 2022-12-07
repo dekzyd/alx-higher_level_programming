@@ -14,5 +14,7 @@ def roman_to_int(roman_string):
         for char in roman_string:
             if char in r_num:
                 total += r_num[char]
+    else:
+        return 0
 
     return total
