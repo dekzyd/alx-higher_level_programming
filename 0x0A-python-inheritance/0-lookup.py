@@ -2,5 +2,5 @@
 ''' function that prints attributes and methods of an object '''
 
 def lookup(obj):
-    """function: lookup() returns attributes and methods of the object argument"""
+    '''function: lookup() returns list of the object args'''
     return dir(obj)
