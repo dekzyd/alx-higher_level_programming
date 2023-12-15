@@ -2,4 +2,4 @@
 -- Each record should display: cities.id - cities.name - states.name
 
 SELECT c.id, c.name, s.name
-FROM hbtn_0d_usa.cities c JOIN hbtn_0d_usa.states s ON c.state_id = s.id ORDER BY c.id ASC; 
+FROM cities c JOIN states s ON c.state_id = s.id ORDER BY c.id ASC; 
